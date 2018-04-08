@@ -1,0 +1,9 @@
+---
+applications:
+- name: sample-service-api-dev
+  memory: 1024M
+  host: sample-service-api-dev
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  path: target/springboot-demo-service-1.0.jar
+  env:
+   apiVersion: '1.0'  
