@@ -95,7 +95,7 @@ public class DemoServiceImpl implements DemoService{
 		}else {
 			
 			throw new DemoException(ErrorCodes.BAD_REQUEST_SENTENCE,
-					HttpStatus.INTERNAL_SERVER_ERROR.toString());
+					HttpStatus.OK.toString());
 		}
         
 		return "\"" + reverseString.toString().trim() + "\"";
@@ -118,7 +118,7 @@ public class DemoServiceImpl implements DemoService{
 		// Therefore if x + y < 0 the sum overflowed and is greater than max.
 		if (x + y > 0 && x + y <= max)           
 			throw new DemoException(ErrorCodes.BAD_REQUEST_TRIANGLE_INEQUALITY,
-					HttpStatus.INTERNAL_SERVER_ERROR.toString());
+					HttpStatus.OK.toString());
 	}
 	
 	/**
@@ -138,7 +138,7 @@ public class DemoServiceImpl implements DemoService{
 		}
 		if(a<=0||b<=0||c<=0)			
 			throw new DemoException(ErrorCodes.BAD_REQUEST_TRIANGLE_SIDE,
-					HttpStatus.INTERNAL_SERVER_ERROR.toString());
+					HttpStatus.OK.toString());
 
 		int max = Math.max(Math.max(a, b), c); 
 		if (max == a)
@@ -172,10 +172,8 @@ public class DemoServiceImpl implements DemoService{
 		listArray.addAll(inputArray.getArray2());
 		listArray.addAll(inputArray.getArray3());
 		if(listArray.isEmpty()) {
-
 			throw new DemoException(ErrorCodes.BAD_REQUEST_ARRAY,
-					HttpStatus.INTERNAL_SERVER_ERROR.toString());
-
+					HttpStatus.OK.toString());
 		}
 
 		try {

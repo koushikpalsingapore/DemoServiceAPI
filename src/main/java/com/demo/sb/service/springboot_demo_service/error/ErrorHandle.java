@@ -1,5 +1,8 @@
 package com.demo.sb.service.springboot_demo_service.error;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
 * The ErrorHandle class is containing the actual error responses.
 * The actual error response will be displayed to end users/front end.
@@ -15,7 +18,31 @@ public class ErrorHandle {
 	private String message;
 	private String messageDetail;
 	private String timestamp;
+	
+	public ErrorHandle(){
+		this.timestamp = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(new Date());
+	}
+	
+	ErrorHandle(String reasonCode) {
+		this();
+		this.reasonCode = reasonCode;
+	}
 
+	ErrorHandle(String reasonCode, Throwable ex) {	
+		this();
+		this.reasonCode = reasonCode;
+		this.message = "Unexpected error";
+		this.messageDetail = ex.getLocalizedMessage();
+	}
+
+	ErrorHandle(String reasonCode, String message, Throwable ex) {
+		this();
+		this.reasonCode = reasonCode;
+		this.message = message;
+		this.messageDetail = ex.getLocalizedMessage();
+	}
+	
+	
 
 	public String getReasonCode() {
 		return reasonCode;

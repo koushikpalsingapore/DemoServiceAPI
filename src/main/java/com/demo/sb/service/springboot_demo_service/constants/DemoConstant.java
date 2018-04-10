@@ -24,5 +24,12 @@ public class DemoConstant {
 	public static final String INVALID_TRIANGLE 			    = "Invalid";
 	public static final String TIMESTAMP 						= "yyyy-MM-dd hhmmssSSS";
 	public static final String ERROR_RESPONSE                   = "ErrorResponse";
+	public static final String BAD_REQUEST_DATA_TYPE            = "BAD_REQUEST_DATA_TYPE";
+	public static final String INPUT_DATATYPE_MESSAGE           = "Please enter correct data type in Input. The parameter '%s' of value '%s' could not be converted to type '%s'";
+	public static final String INPUT_JSON_MESSAGE               = "Malformed JSON request. Please enter correct/valid JSON input with integer Array";
+	 
+	
+	
+	
 
 }

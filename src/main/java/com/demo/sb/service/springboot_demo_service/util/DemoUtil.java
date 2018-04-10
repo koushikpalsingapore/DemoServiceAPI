@@ -67,7 +67,7 @@ public class DemoUtil {
 	{		
 		if (e instanceof ArrayIndexOutOfBoundsException)
 			return new DemoException(ErrorCodes.BAD_REQUEST_ARRAY_INDEX,
-					HttpStatus.INTERNAL_SERVER_ERROR.toString());	
+					HttpStatus.OK.toString());	
 		return new DemoException(ErrorCodes.DEMMO_SERVICE_SERVER_ERROR,
 				HttpStatus.INTERNAL_SERVER_ERROR.toString());
 	}
