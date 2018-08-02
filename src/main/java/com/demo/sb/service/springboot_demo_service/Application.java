@@ -44,7 +44,7 @@ public class Application {
 	
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder().title("Spring Boot Demo REST APIs").description("Spring Boot Demo REST APIs")
-				.termsOfServiceUrl("http://....").contact(new Contact("Telstra HPSE.", "https://www.telstra.com", "koushik.maiti@wipro.com")).license("Telstra Licensed")
+				.termsOfServiceUrl("http://....").contact(new Contact("Telstra HPSE...", "https://www.telstra.com", "koushik.maiti@wipro.com")).license("Telstra Licensed")
 				.licenseUrl("https://wipro.com").version(apiVersion).build();
 	}
 
