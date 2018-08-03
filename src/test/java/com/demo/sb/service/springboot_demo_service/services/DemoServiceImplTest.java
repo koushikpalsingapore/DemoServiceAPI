@@ -57,7 +57,6 @@ public class DemoServiceImplTest {
 	 * The execution of this method will pass if expected result matchs
 	 * @throws DemoException
 	 */
-
 	@Test
 	public void testTraingleType() throws DemoException {
 		DemoServiceImpl demoServiceImpl = new DemoServiceImpl();
