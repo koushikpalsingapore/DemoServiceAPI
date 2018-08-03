@@ -1,7 +1,8 @@
 pipeline {
-    agent { docker { image 'maven:3.3.3' } }
+    bat 'echo "Starting the Pipe Line"'
+    agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
                 bat 'mvn clean build'
                 }
