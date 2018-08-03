@@ -34,7 +34,7 @@ public class DemoException extends Exception {
 	@Override
 	public String toString() {
 		return "DemoException [errorCode=" + errorCode
-				+ ", statusCode=" + statusCode + "]";
+				+ ", statusCode =" + statusCode + "]";
 	}
 
 }
