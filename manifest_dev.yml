@@ -1,8 +1,9 @@
 ---
 applications:
-- name: sample-service-api-dev
+- name: sample-service-api
   memory: 1024M
-  host: sample-service-api-dev
+  routes:
+  - route: sample-service-demo.cfapps.io
   buildpack: https://github.com/cloudfoundry/java-buildpack.git
   path: target/springboot-demo-service-1.0.1.jar
   env:
