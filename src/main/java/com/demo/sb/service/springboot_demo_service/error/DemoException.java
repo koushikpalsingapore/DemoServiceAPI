@@ -21,8 +21,7 @@ public class DemoException extends Exception {
 		super();
 		this.errorCode = errorCode;
 		this.statusCode = statuCode;
-	}
-	
+	}	
 	public ErrorCodes getErrorCode() {
 		return errorCode;
 	}
