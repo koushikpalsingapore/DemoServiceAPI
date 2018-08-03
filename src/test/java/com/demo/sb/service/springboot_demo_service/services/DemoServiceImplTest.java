@@ -21,8 +21,7 @@ import com.demo.sb.service.springboot_demo_service.model.OutputResponseWrapper;
 * @since   2018-04-06 
 */
 
-public class DemoServiceImplTest {
-	
+public class DemoServiceImplTest {	
 
 	/**
 	 * This junit test method will verify the fibonacciNumber method of DemoServiceImpl
